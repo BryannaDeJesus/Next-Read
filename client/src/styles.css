@@ -11,3 +11,8 @@ h2 {
 background {
   color: gray;
 }
+.Button {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
