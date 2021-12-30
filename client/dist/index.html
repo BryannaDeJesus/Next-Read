@@ -2,9 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Next Read</title>
-        <script defer src="bundle.js"></script>
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-800563353019-v3j1rev5glpf3bkkm5g3kivu6l70fhkh.apps.googleusercontent.com" content="800563353019-v3j1rev5glpf3bkkm5g3kivu6l70fhkh.apps.googleusercontent.com.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>Webpack App</title>
+    <script defer src="bundle.js"></script>
+<script src="https://apis.google.com/js/api.js"></script>
     </head>
     <body>
-        <div id="app"></div></body>
+        <div id="app"></div>
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+   
+    </body>
 </html>

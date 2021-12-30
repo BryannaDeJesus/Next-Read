@@ -1,18 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+
 h1 {
   color: black;
   display: flex;
   justify-content: center;
+  font-family: 'Newsreader', serif;
 }
 h2 {
   color: black;
   display: flex;
   justify-content: center;
+  font-family: 'Newsreader', serif;
+}
+h4 {
+  color: black;
 }
 background {
   color: gray;
 }
-.Button {
-  background-color: white;
+
+/* .headers {
+  color: black;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-family: 'Newsreader', serif;
+} */
+
+
+.book{
+  background-color: white;
+  display: flex;
+  margin: auto;
+  max-width: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  border-color: $lightGray;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  padding-bottom: 5px;
+  font-family: 'Newsreader', serif;
 }
+
