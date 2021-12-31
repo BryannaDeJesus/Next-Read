@@ -19,10 +19,9 @@ function Book() {
   function handleClick(event) {
     axios.get("https://www.googleapis.com/books/v1/volumes?q="+book+"&key="+apiKey+"&maxResults=40")
     .then(data => {
-      
+
       const res = data.data.items;
       const randomBook = res[Math.floor(Math.random()*res.length)]
-    
       const bookInfo = randomBook.volumeInfo;
       const { title } = bookInfo;
       const { authors } = bookInfo;
@@ -39,35 +38,34 @@ function Book() {
     })
     .catch(error => console.log('Error in fetch request.'))
   }
+  function buttonClear(){
+    window.location.reload();
+  }
 
-  // const btnClear = document.querySelector('button');
-  // const input = document.querySelector('input')
-  // btnClear = addEventListener('click', () => {
-  //   input.value = "";
-  // })
     return (
       <>
       <article className="book"> <div>
-         <input size="25" type="text" onChange={handleInput} placeholder="Search by keyword or genre"/>
+         <input size="25" type="text" onChange={handleInput} placeholder="Search here..."/>
       </div>
-    <div className="Buttons">
-      <button className="Button" onClick={handleClick}>Search</button>
+    <div className="button">
+      <button id="searchButton" onClick={handleClick}>Search</button><button type="reset" onClick={buttonClear}>Clear</button>
     </div>
-    <div>
+    <div className="title">
       {titleHeader}{result[0]}
     </div>
-    <div>
+    <div className="author">
       {authorHeader}{result[1]}
     </div>
-    <div> 
+    <div className="image">  
       <a target="_blank" href={result[4]}><img src= {result[2]} alt={result}/></a>
     </div>
-    <div>
+    <div className="bookLine">
       <h4>{result[5]}</h4>
     </div>
-    <div>
+    <div className="description">
       {descriptionHeader}{result[3]}
-    </div></article>
+    </div>
+    </article> 
 
     </>
     )

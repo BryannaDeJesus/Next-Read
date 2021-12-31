@@ -6,33 +6,42 @@ h1 {
   justify-content: center;
   font-family: 'Newsreader', serif;
 }
-h2 {
+h3 {
   color: black;
   display: flex;
   justify-content: center;
   font-family: 'Newsreader', serif;
 }
 h4 {
-  color: black;
+  color: blue;
+  text-align: center;
 }
-background {
-  color: gray;
+body {
+  background-color: gray;
 }
-
-/* .headers {
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Newsreader', serif;
-} */
-
-
-.book{
+.header {
   background-color: white;
   display: flex;
   margin: auto;
+  max-width: 650px;
+  max-height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  border-color: $lightGray;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1%;
+  font-family: 'Newsreader', serif;
+}
+.book{
+  background-color: white;
+  display: flex;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 500px;
+  max-height: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -40,7 +49,26 @@ background {
   border-color: $lightGray;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5%;
+  padding-top: 15px;
   padding-bottom: 5px;
   font-family: 'Newsreader', serif;
 }
 
+
+.button {
+  padding-top: 7px;
+  padding-bottom: 15px;
+}
+.title {
+  padding-bottom: 1px;
+}
+.author {
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+.description {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
